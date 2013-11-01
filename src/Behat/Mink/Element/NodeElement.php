@@ -333,4 +333,36 @@ class NodeElement extends TraversableElement
     {
         $this->getSession()->getDriver()->submitForm($this->getXpath());
     }
+
+    /**
+     * Returns the size of the element.
+     *
+     * @return mixed
+     */
+    public function getSize()
+    {
+        return $this->getSession()->getDriver()->getSize($this->getXpath());
+    }
+
+    /**
+     * Returns the location of the element.
+     *
+     * @return mixed
+     */
+    public function getLocation()
+    {
+        return $this->getSession()->getDriver()->getLocation($this->getXpath());
+    }
+
+    /**
+     * Returns specified css value.
+     *
+     * @param string $name
+     *
+     * @return mixed|null
+     */
+    public function getCssValue($name)
+    {
+        return $this->getSession()->getDriver()->getCssValue($this->getXpath(), $name);
+    }
 }
