@@ -365,4 +365,15 @@ class NodeElement extends TraversableElement
     {
         return $this->getSession()->getDriver()->getCssValue($this->getXpath(), $name);
     }
+
+    /**
+     * Returns specified css value.
+     *
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->getSession()->getDriver()->getTitle();
+    }
+
 }

@@ -356,4 +356,62 @@ abstract class CoreDriver implements DriverInterface
     {
         throw new UnsupportedDriverActionException('Form submission is not supported by %s', $this);
     }
+
+    /**
+     * Returns an array with the size of the element.
+     *
+     * Added by stefan
+     *
+     * @param $xpath
+     *
+     * @throws UnsupportedDriverActionException
+     * @return array
+     */
+    public function getSize($xpath)
+    {
+        throw new UnsupportedDriverActionException('getSize is not supported by %s', $this);
+    }
+
+    /**
+     * Returns an array with the top left position of the element.
+     *
+     * Added by stefan
+     *
+     * @param $xpath
+     *
+     * @throws UnsupportedDriverActionException
+     * @return array
+     */
+    public function getLocation($xpath)
+    {
+        throw new UnsupportedDriverActionException('GetLocation is not supported by %s', $this);
+    }
+
+    /**
+     * Returns the title.
+     *
+     * Added by stefan
+     *
+     * @throws UnsupportedDriverActionException
+     * @return string
+     */
+    public function getTitle() {
+        throw new UnsupportedDriverActionException('GetTitle is not supported by %s', $this);
+    }
+
+    /**
+     * Returns value of the css property of the elements.
+     *
+     * Added by stefan
+     *
+     * @param string $xpath
+     * @param string $name
+     *
+     * @throws UnsupportedDriverActionException
+     * @return array
+     */
+    public function getCssValue($xpath, $name)
+    {
+        throw new UnsupportedDriverActionException('getCssValue is not supported by %s', $this);
+    }
 }
