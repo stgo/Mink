@@ -1,4 +1,4 @@
-Mink
+Mink!
 ====
 
 - [stable (master)](https://github.com/Behat/Mink) ([![Master Build
